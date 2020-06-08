@@ -1,6 +1,5 @@
 # Python---Scripts
-Different python projects consisting of a single python script.
-Those scripts are not in a single specific topic, there are different scripts doing different things...
-Some folders contain more than one script if they do the same thing or,
-they are variation of the same subject.
+This folder contain script, for hiding text in images.
 
+>Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video.
+[Steganography Wiki](https://en.wikipedia.org/wiki/Steganography)
