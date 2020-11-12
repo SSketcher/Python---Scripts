@@ -1,5 +1,22 @@
-# Python---Scripts
-This folder contain two scripts, for doing one-time pad encryption on .text files, and on images.
+# Logistic Map
+## General info
+Highly influenced by Veritasium video, I attempted to visualize Logistic map.
 
->In cryptography, the one-time pad (OTP) is an encryption technique that cannot be cracked, but requires the use of a one-time pre-shared key the same size as, or longer than, the message being sent. In this technique, a plaintext is paired with a random secret key (also referred to as a one-time pad). Then, each bit or character of the plaintext is encrypted by combining it with the corresponding bit or character from the pad using modular addition. If the key is truly random, at least as long as the plaintext, never reused in whole or in part, and kept completely secret, then the resulting ciphertext will be impossible to decrypt or break.
-[One-Time Pad Wiki](https://en.wikipedia.org/wiki/One-time_pad)
+Diagram representing logistic map in action for different growth rates.
+![alt text](https://github.com/SSketcher/Python---Scripts/blob/master/Logistic--map/Logistic_map.py?raw=true)
+
+Bifurcation diagram created by displaying levels at which each generations are stabilizing or not...
+![alt text](https://github.com/SSketcher/Python---Scripts/blob/master/Logistic--map/bifurcation%20_diagram.png?raw=true)
+
+
+## Technologies
+* Python 3.6
+
+Libraries:
+* matplotlib
+* numpy
+
+## Sources and helpful materials
+[Chaos Theory and the Logistic Map](https://geoffboeing.com/2015/03/chaos-theory-logistic-map/)
+
+[This equation will change how you see the world (the logistic map)](https://www.youtube.com/watch?v=ovJcsL7vyrk)
