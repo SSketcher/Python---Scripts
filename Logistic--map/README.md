@@ -3,7 +3,7 @@
 Highly influenced by Veritasium video, I attempted to visualize Logistic map.
 
 Diagram representing logistic map in action for different growth rates.
-![alt text](https://github.com/SSketcher/Python---Scripts/blob/master/Logistic--map/Logistic_map.py?raw=true)
+![alt text](https://github.com/SSketcher/Python---Scripts/blob/master/Logistic--map/Logistic_map.png?raw=true)
 
 Bifurcation diagram created by displaying levels at which each generations are stabilizing or not...
 ![alt text](https://github.com/SSketcher/Python---Scripts/blob/master/Logistic--map/bifurcation%20_diagram.png?raw=true)
