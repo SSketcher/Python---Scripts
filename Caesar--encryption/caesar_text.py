@@ -16,13 +16,16 @@ def toASCII(input_text):
 def encrypt(input_data,s):
     result = []
     for i in range(len(input_data)):
-        result.append((input_data[i] + s)%122)
+        foo = (input_data[i] + s)%122
+        result.append(foo + 32)
+
     return result
 
 def decrypt(input_data,s):
     result = []
     for i in range(len(input_data)):
-        result.append((input_data[i] - s)%122)
+        foo = input_data[i] - 32
+        result.append((foo - s)%122)
     return result
 
 def makeHist(text, text_shifted):     #function for drawing histograms
@@ -51,13 +54,14 @@ def main():     #main function
     path = input('Enter the file path: ')
     if type(path) != str:       #path must be a string
         raise TypeError("Path must be a string")
-    with open (path, "r") as myfile:
+    with open (path, "r", encoding = "utf-8") as myfile:
         text = myfile.read()
 
     s = int(input('Enter value of shift: '))     #entering the shift valueenc
     
     if flag.lower() == 'enc':       #checking if the flag was set to encrypt
         text_mod = encrypt(toASCII(text),s)       #encrypting text
+        print(text_mod)
     elif flag.lower() == 'dec':       #checking if the flag was set to decrypt
         text_mod = encrypt(toASCII(text),s)       #decrypting text
     else:       #if the flag was set wrong
@@ -69,9 +73,9 @@ def main():     #main function
         raise ValueError("You entered wrong value")
     
     if sav.upper() == 'Y':       #checking if the saving flag was set to Y
-        with open ('result_text.txt', "w") as myfile:        #saving result
+        with open ('result_text.txt', "wt", encoding = "utf-8") as myfile:        #saving result
             myfile.write(fromASCII(text_mod))
-    if sav.upper() == 'N':       #checking if the saving flag was set to N
+    elif sav.upper() == 'N':       #checking if the saving flag was set to N
         print(fromASCII(text_mod))      #displaying result
     else:       #if the flag was set wrong
         print('Something went wrong ... sorry')
