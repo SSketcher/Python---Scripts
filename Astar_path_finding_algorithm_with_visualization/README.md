@@ -6,7 +6,7 @@ Based on [Tech With Tim video](https://www.youtube.com/watch?v=JtiK0DOeI4A), I'v
 [A* algorithm Wiki](https://en.wikipedia.org/wiki/A*_search_algorithm)
 
 This is the final result.
-![alt text](https://github.com/SSketcher/Python---Scripts/blob/master/Astar_path_finding_algorithm_with_visualization/pathfinding.png?raw=true)
+![alt text](https://github.com/SSketcher/Python---Scripts/blob/master/Astar_path_finding_algorithm_with_visualization/pathfinding.PNG?raw=true)
 
 Orange square and turquois square are respectively start and finish nodes. Black lines are barriers of the "maze". The red and green squares are results of the algorithm analyzing the "maze", the red squares represent nodes closed set of fully explored nodes, and the green ones represent open set of nodes for possible further exploration (at the time of algorithm working). A purple path is the shortest path from start to finish, that the algorithm established.
 
