@@ -12,7 +12,7 @@ This is the final result.
 Orange square and turquois square are respectively start and finish nodes. Black lines are barriers of the "maze". The red and green squares are results of the algorithm analyzing the "maze", the red squares represent nodes closed set of fully explored nodes, and the green ones represent open set of nodes for possible further exploration (at the time of algorithm working). A purple path is the shortest path from start to finish, that the algorithm established.
 
 ## Technologies
-* Python 3.6
+* Python 3.7.3
 
 Libraries:
 * pygame
