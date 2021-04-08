@@ -7,10 +7,7 @@ they are variation of the same subject.
 **Feel free to check them out.**
 
 ## List of projects
-* [Astar_Path_finding_with_algorithm_Visualization](https://github.com/SSketcher/Python---Scripts/tree/master/Astar_Path_finding_with_algorithm_Visualization)
-* [Caesar--encryption](https://github.com/SSketcher/Python---Scripts/tree/master/Caesar--encryption)
-* [Dictionary_attack](https://github.com/SSketcher/Python---Scripts/tree/master/Dictionary_attack)
-* [Logistic--map](https://github.com/SSketcher/Python---Scripts/tree/master/Logistic--map)
-* [One_time_pad--encryption](https://github.com/SSketcher/Python---Scripts/tree/master/One_time_pad--encryption)
+* [Astar_path_finding_algorithm_with_visualization](https://github.com/SSketcher/Python---Scripts/tree/master/Astar_path_finding_algorithm_with_visualization)
+* [Logistic_map_visualisation](https://github.com/SSketcher/Python---Scripts/tree/master/Logistic_map_visualisation)
 * [Steganography](https://github.com/SSketcher/Python---Scripts/tree/master/Steganography)
 * [Tic_Tac_Toe](https://github.com/SSketcher/Python---Scripts/tree/master/Tic_Tac_Toe)
