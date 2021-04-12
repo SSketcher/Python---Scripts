@@ -8,6 +8,7 @@ they are variation of the same subject.
 
 ## List of projects
 * [Astar_path_finding_algorithm_with_visualization](https://github.com/SSketcher/Python---Scripts/tree/master/Astar_path_finding_algorithm_with_visualization)
+* [Caesar_encryption](https://github.com/SSketcher/Python---Scripts/tree/master/Caesar_encryption)
 * [Fibonacci_sequence](https://github.com/SSketcher/Python---Scripts/tree/master/Fibonacci_sequence)
 * [Logistic_map_visualisation](https://github.com/SSketcher/Python---Scripts/tree/master/Logistic_map_visualisation)
 * [Steganography](https://github.com/SSketcher/Python---Scripts/tree/master/Steganography)
