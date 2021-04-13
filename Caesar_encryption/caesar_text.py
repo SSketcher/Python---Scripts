@@ -29,17 +29,17 @@ def decrypt(input_data,s):      #decypting function
 
 def makeHist(text, text_shifted):     #function for drawing histograms
     fig, axs = plt.subplots(2, 1, constrained_layout=True)      #setting subplot 
-    fig.suptitle('Comparison of the tonal distribution in the  images.', fontsize=16)       #setting figure title
+    fig.suptitle('Comparison of the characters distribution', fontsize=16)       #setting figure title
 
-    axs[0].hist(text_shifted, bins = list(range(32,122)))       #making histogram and adding it to the subplot
-    axs[0].set_title('Histogram of shifted image')      #setting tittle of histogram
-    axs[0].set_xlabel('Colors')     # x axis name
+    axs[0].hist(toASCII(text), bins = list(range(32,126)))       #making histogram and adding it to the subplot
+    axs[0].set_title('Histogram of original text')      #setting tittle of histogram
+    axs[0].set_xlabel('Characters')     # x axis name
     axs[0].set_ylabel('Frequency')      # y axis name
 
 
-    axs[1].hist(toASCII(text), bins = list(range(32,122)))       #making histogram and adding it to the subplot
-    axs[1].set_title('Histogram of original image')
-    axs[1].set_xlabel('Colors')
+    axs[1].hist(text_shifted, bins = list(range(32,126)))       #making histogram and adding it to the subplot
+    axs[1].set_title('Histogram of shifted text')
+    axs[1].set_xlabel('Characters')
     axs[1].set_ylabel('Frequency')
 
     plt.show()
