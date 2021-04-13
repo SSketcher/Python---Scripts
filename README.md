@@ -13,3 +13,5 @@ they are variation of the same subject.
 * [Logistic_map_visualisation](https://github.com/SSketcher/Python---Scripts/tree/master/Logistic_map_visualisation)
 * [Steganography](https://github.com/SSketcher/Python---Scripts/tree/master/Steganography)
 * [Tic_Tac_Toe](https://github.com/SSketcher/Python---Scripts/tree/master/Tic_Tac_Toe)
+* [Vernam_encryption](https://github.com/SSketcher/Python---Scripts/tree/master/Vernam_encryption)
+
