@@ -6,48 +6,45 @@ from numpy import asarray
 from PIL import Image
 
 
-def key_gen(length):
-    key = []
-    for i in range(length):
-        key.append(int(np.random.randint(0, 255, 1)))
-    return key
-
-def encrypt(input_data,key_):
-    result = []
-    if len(key_)<len(input_data[1]):
-        temp = key_
-        while len(key_)<(len(input_data)*len(input_data[1])):
-            key_ += temp
-    print(len(key_))
-    for i in range(len(input_data)):
-        foo = []
-        row = input_data[i]
-        for j in range(len(row)):
-            foo.append((row[j] - key_[(len(input_data[1]) *(i-1) ) + j])%255)
-        result.append(foo)
-    return np.asarray(result)
-
-def decrypt(input_data,key_):
-    key_count = 1
-    result = []
-    if len(key_)<(len(input_data)*len(input_data[1])):
-        temp = key_
-        while len(key_)<(len(input_data)*len(input_data[1])):
-            key_.append(temp)
-    for i in range(len(input_data)):
-        foo = []
-        row = input_data[i]
-        for j in range(len(row)):
-            foo.append(row[j] + key_[key_count])
-            key_count += 1
-        result.append(foo)
-    return np.asarray(result)
-
 def fromArray(input_data):
     result = []
     for i in range(len(input_data)):
         result += input_data[i]
     return result
+
+def key_gen(length):      #key generating function
+    key = []
+    for _ in range(length):     # _ as a throwaway variable
+        key.append(int(np.random.randint(0, 255, 1)))
+    return key
+
+def encrypt(input_data, key):      #encypting function
+    result = []
+    if len(key) < (len(input_data) * len(input_data[1])):
+        temp = key
+        while len(key) < (len(input_data) * len(input_data[1])):
+            key += temp
+    for i in range(len(input_data)):
+        foo = []
+        row = input_data[i]
+        for j in range(len(row)):
+            foo.append((row[j] - key[(len(input_data[1]) * (i-1) ) + j]) %255)
+        result.append(foo)
+    return np.asarray(result)
+
+def decrypt(input_data, key):      #decypting function
+    result = []
+    if len(key) < (len(input_data) * len(input_data[1])):
+        temp = key
+        while len(key) < (len(input_data) * len(input_data[1])):
+            key.append(temp)
+    for i in range(len(input_data)):
+        foo = []
+        row = input_data[i]
+        for j in range(len(row)):
+            foo.append((row[j] + key[(len(input_data[1]) * (i-1) ) + j]) %255)
+        result.append(foo)
+    return np.asarray(result)
 
 def list_to_string(key_list):      #function translate list into string
     key = ''
@@ -103,8 +100,9 @@ def main():     #main function
     if flag.lower() == 'enc':       #checking if the flag was set to encrypt
         s = int(input('Enter key length: '))     #entering the key length
         key = key_gen(s)
+        print(len(key))
 
-        img_mod = encrypt(data,s)       #encrypting image
+        img_mod = encrypt(data, key)       #encrypting image
 
         print('Do you whant to save key to text file?')
         sav = input('Enter Y or N: ')        #entering the flag for saving the result
@@ -125,7 +123,7 @@ def main():     #main function
             key_str = myfile.read()
         key = string_to_list(key_str)       #translating input key string into list
 
-        img_mod = decrypt(data,s)       #decrypting image
+        img_mod = decrypt(data, key)       #decrypting image
     else:       #if the flag was set wrong
         print('Something went wrong ... sorry')
 

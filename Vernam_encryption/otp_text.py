@@ -17,7 +17,7 @@ def fromASCII(input_data):      #nuemric valeus to ACII characters
 
 def key_gen(length):      #key generating function
     key = []
-    for i in range(length):
+    for _ in range(length):     # _ as a throwaway variable
         key.append(int(np.random.randint(32, 126, 1)))
     return key
 
