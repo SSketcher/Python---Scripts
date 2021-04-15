@@ -7,6 +7,7 @@ they are variation of the same subject.
 **Feel free to check them out.**
 
 ## List of projects
+* [Assembly_Line_Balancing](https://github.com/SSketcher/Python---Scripts/tree/master/Assembly_Line_Balancing)
 * [Astar_path_finding_algorithm_with_visualization](https://github.com/SSketcher/Python---Scripts/tree/master/Astar_path_finding_algorithm_with_visualization)
 * [Caesar_encryption](https://github.com/SSketcher/Python---Scripts/tree/master/Caesar_encryption)
 * [Fibonacci_sequence](https://github.com/SSketcher/Python---Scripts/tree/master/Fibonacci_sequence)
